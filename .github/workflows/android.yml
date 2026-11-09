@@ -25,10 +25,47 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Android SDK Platform 37
+      - name: Setup Android SDK Build Tools 36.0.0
         uses: android-actions/setup-android@v3
         with:
-          packages: 'platforms;android-37 build-tools;36.0.0'
+          packages: 'build-tools;36.0.0'
+
+      - name: Install Android 17 Preview SDK (API 37.0) via Preview Channel
+        run: |
+          set -e
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          if [ ! -x "$SDKMANAGER" ]; then
+            SDKMANAGER="$ANDROID_HOME/tools/bin/sdkmanager"
+          fi
+          
+          if [ ! -x "$SDKMANAGER" ]; then
+            echo "::error::sdkmanager executable not found in $ANDROID_HOME/cmdline-tools/latest/bin/ or $ANDROID_HOME/tools/bin/"
+            exit 1
+          fi
+
+          echo "Using sdkmanager at: $SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses > /dev/null
+          yes | "$SDKMANAGER" --channel=3 "platforms;android-37.0"
+
+      - name: Verify Android 37 Platform & android.jar
+        run: |
+          set -e
+          echo "Checking installed Android SDK platforms in $ANDROID_HOME/platforms..."
+          ls -la "$ANDROID_HOME/platforms"
+          
+          PLATFORM_DIR=""
+          if [ -d "$ANDROID_HOME/platforms/android-37.0" ]; then
+            PLATFORM_DIR="$ANDROID_HOME/platforms/android-37.0"
+          elif [ -d "$ANDROID_HOME/platforms/android-37" ]; then
+            PLATFORM_DIR="$ANDROID_HOME/platforms/android-37"
+          fi
+
+          if [ -z "$PLATFORM_DIR" ] || [ ! -f "$PLATFORM_DIR/android.jar" ]; then
+            echo "::error::Android 37 Platform or android.jar missing in $ANDROID_HOME/platforms!"
+            exit 1
+          fi
+
+          echo "Verified Android 37 Platform and android.jar at: $PLATFORM_DIR/android.jar"
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4

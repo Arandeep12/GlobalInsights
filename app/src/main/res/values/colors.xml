@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Professional Slate Navy Palette -->
+    <color name="primary">#1E40AF</color>
+    <color name="primary_dark">#0F172A</color>
+    <color name="primary_light">#EFF6FF</color>
+    <color name="accent">#0284C7</color>
+    <color name="accent_green">#059669</color>
+
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="border_color">#E2E8F0</color>
+    <color name="chip_bg">#F1F5F9</color>
+    <color name="chip_bg_selected">#1E40AF</color>
+</resources>

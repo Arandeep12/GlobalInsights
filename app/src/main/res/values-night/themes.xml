@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GlobalInsights" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="dialogTheme">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+
+        <!-- Android 12+ (API 31+) System Splash Screen Customization -->
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/ic_global_insights_logo</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/primary_dark</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="31">@color/primary_dark</item>
+    </style>
+
+    <style name="Theme.GlobalInsights" parent="Base.Theme.GlobalInsights" />
+
+    <style name="Theme.GlobalInsights.FullScreenDialog" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+</resources>

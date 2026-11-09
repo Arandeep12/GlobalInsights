@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Global Insights</string>
+
+    <!-- Onboarding / Welcome Screen -->
+    <string name="welcome_hero_tag">GLOBAL DEMOGRAPHIC &amp; ECONOMIC INTELLIGENCE</string>
+    <string name="welcome_title">Global Insights</string>
+    <string name="welcome_subtitle">Real-time country statistics, population trends, and GDP analytics powered by the World Bank.</string>
+    <string name="btn_launch_dashboard">Explore Live Statistics</string>
+    <string name="main_capability_tag">REAL-TIME GLOBAL INTELLIGENCE</string>
+    <string name="main_capability_title">Official World Bank Data Engine</string>
+    <string name="main_capability_desc">Instant population counts, GDP macro-economic metrics, and voice-assisted query analysis.</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_header_tag">GLOBAL MARKET OVERVIEW</string>
+    <string name="dashboard_header_title">Country Intelligence</string>
+    <string name="dashboard_search_hint">Search country name or code (e.g. India, USA, JPN)&#8230;</string>
+    <string name="dashboard_featured_heading">FEATURED COUNTRIES</string>
+    <string name="dashboard_favorites_heading">FAVORITE COUNTRIES (PERSISTED IN SQLITE)</string>
+    <string name="dashboard_no_favorites">No favorite countries added yet. Tap the star icon on any country card to save to SQLite.</string>
+    <string name="dashboard_reports_heading">SAVED COUNTRY REPORTS (INTERNAL STORAGE)</string>
+    <string name="dashboard_no_reports">No saved reports found. Tap "Save Report" on any country card to store a local snapshot.</string>
+
+    <string name="dashboard_metrics_heading">REAL-TIME WORLD BANK METRICS</string>
+    <string name="dashboard_insights_summary">GLOBAL COVERAGE SUMMARY</string>
+
+    <!-- Country Comparison Engine -->
+    <string name="compare_engine_title">Country Comparison Engine</string>
+    <string name="compare_engine_subtitle">Side-by-side World Bank Population &amp; GDP Analytics</string>
+    <string name="compare_select_heading">SELECT COUNTRIES TO COMPARE</string>
+    <string name="compare_country1_hint">Search Country 1 (e.g. India)&#8230;</string>
+    <string name="compare_country2_hint">Search Country 2 (e.g. USA)&#8230;</string>
+    <string name="btn_compare_execute">Compare Countries</string>
+    <string name="label_gdp_per_capita">CALCULATED GDP PER CAPITA</string>
+    <string name="btn_ask_ai_compare">Ask AI to Analyze This Comparison</string>
+
+    <!-- Real-Time Location Map -->
+    <string name="map_title">Real-Time Location Map</string>
+    <string name="map_sharing_off">Location Sharing Off</string>
+    <string name="map_sharing_active">Location Sharing Active</string>
+    <string name="btn_start_sharing">Start Sharing</string>
+    <string name="btn_stop_sharing">Stop Sharing</string>
+    <string name="map_sync_heading">FIRESTORE REAL-TIME LOCATION SYNC</string>
+    <string name="label_latitude">LATITUDE</string>
+    <string name="label_longitude">LONGITUDE</string>
+
+    <!-- Firebase Smart Notes -->
+    <string name="notes_title">Firebase Smart Notes</string>
+    <string name="notes_subtitle">Cloud Firestore Sync Active</string>
+    <string name="btn_new_note">+ New Note</string>
+    <string name="no_notes_found">No smart notes found. Tap \'+ New Note\' to create a note.</string>
+    <string name="create_note_title">Create Smart Note</string>
+    <string name="edit_note_title">Edit Smart Note</string>
+    <string name="create_note_subtitle">Store insights securely in Firebase Cloud Firestore</string>
+    <string name="hint_note_title">Note Title (e.g. India Economy 2024)</string>
+    <string name="hint_note_country">Associated Country (e.g. IND - India)</string>
+    <string name="hint_note_content">Enter detailed note content or market observations&#8230;</string>
+    <string name="heading_ai_summary">AI EXECUTIVE SUMMARY</string>
+    <string name="btn_generate_ai_summary">Generate AI Summary</string>
+    <string name="hint_no_ai_summary">No AI summary generated yet. Tap \'Generate AI Summary\' above.</string>
+    <string name="btn_save_note">Save Note</string>
+
+    <!-- AI Chatbot Assistant -->
+    <string name="ai_assistant_title">Global Insights AI</string>
+    <string name="ai_assistant_subtitle">Powered by Gemini 2.0 AI Engine</string>
+    <string name="ai_assistant_context_prefix">Context: </string>
+    <string name="ai_assistant_thinking">Global Insights AI is thinking&#8230;</string>
+    <string name="ai_assistant_hint">Ask about population, GDP, or economic metrics&#8230;</string>
+    <string name="ai_welcome_title">Welcome to Global Insights AI!</string>
+    <string name="ai_welcome_desc">Ask anything about country statistics, macro-economic comparisons, population trends, or financial metrics.</string>
+    <string name="ai_suggested_heading">SUGGESTED QUESTIONS</string>
+    <string name="ai_suggestion_1">Explain GDP in simple terms.</string>
+    <string name="ai_suggestion_2">What is India\'s latest population?</string>
+    <string name="ai_suggestion_3">Compare India and Pakistan.</string>
+    <string name="ai_context_heading">ACTIVE COUNTRY CONTEXT</string>
+    <string name="ai_context_loading">Loading country context&#8230;</string>
+    <string name="status_online">Online</string>
+
+    <string name="cd_close_ai">Close AI Chat</string>
+    <string name="cd_send_message">Send Message</string>
+
+    <!-- Country Analytics Display -->
+    <string name="label_country_code">ISO CODE</string>
+    <string name="label_data_year">DATA YEAR</string>
+    <string name="label_population">TOTAL POPULATION</string>
+    <string name="label_gdp">GROSS DOMESTIC PRODUCT (GDP)</string>
+    <string name="source_attribution">Source: World Bank Open Data API</string>
+    <string name="btn_read_aloud">Read Aloud</string>
+    <string name="btn_save_report">Save Report</string>
+    <string name="btn_sync_data">Sync Data</string>
+    <string name="btn_view_live">View Live</string>
+    <string name="btn_delete">Delete</string>
+
+    <!-- Country Chips -->
+    <string name="chip_india">🇮🇳 India</string>
+    <string name="chip_usa">🇺🇸 USA</string>
+    <string name="chip_uk">🇬🇧 UK</string>
+    <string name="chip_china">🇨🇳 China</string>
+    <string name="chip_germany">🇩🇪 Germany</string>
+    <string name="chip_japan">🇯🇵 Japan</string>
+    <string name="chip_france">🇫🇷 France</string>
+    <string name="chip_brazil">🇧🇷 Brazil</string>
+
+    <!-- Settings / Profile -->
+    <string name="settings_title">Preferences &amp; Settings</string>
+    <string name="settings_subtitle">Customize application theme and preferred default country.</string>
+    <string name="settings_section_appearance">1. APPEARANCE THEME</string>
+    <string name="settings_section_country">2. PREFERRED DEFAULT COUNTRY</string>
+    <string name="settings_country_desc">Select the country to auto-load upon app launch:</string>
+    <string name="settings_country_hint">Search preferred country&#8230;</string>
+    <string name="settings_theme_label">App Theme Mode (SharedPreferences)</string>
+    <string name="settings_theme_system">System Default</string>
+    <string name="settings_theme_light">Light Theme</string>
+    <string name="settings_theme_dark">Dark Theme</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_save_apply">Save &amp; Apply</string>
+
+    <!-- Bottom Navigation Labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_explore">AI Assistant</string>
+    <string name="nav_compare">Compare</string>
+    <string name="nav_profile">Preferences</string>
+
+    <!-- Content Descriptions & Accessibility -->
+    <string name="cd_globe_logo">Global Insights Logo</string>
+    <string name="cd_search">Search Icon</string>
+    <string name="cd_mic">Voice Search Microphone</string>
+    <string name="cd_speaker">Read Aloud Audio</string>
+    <string name="cd_analytics">Analytics Icon</string>
+    <string name="cd_back">Back Navigation</string>
+
+    <!-- Error Messages -->
+    <string name="error_country_not_found">Country not found. Try searching for India, USA, China, Germany, Japan, or enter a 3-letter ISO code.</string>
+    <string name="error_network">Unable to connect to World Bank API. Please check your internet connection.</string>
+    <string name="error_json_parse">Unable to process World Bank data response.</string>
+</resources>

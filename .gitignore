@@ -1,0 +1,64 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/DALVIK VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files & release build outputs
+/bin/
+/gen/
+/out/
+/build/
+app/build/
+app/release/
+release/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (contains API keys: GEMINI_API_KEY, MAPS_API_KEY)
+local.properties
+
+# Firebase Configuration File
+google-services.json
+/app/google-services.json
+
+# Signing credentials & Keystores
+*.jks
+*.keystore
+*.p12
+*.key
+*.pepk
+
+# Android Studio & IDE files
+.navigation/
+.idea/
+*.iml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetSelector.xml
+.idea/deviceManager.xml
+
+# Keystore & Private Credentials
+private_keys/
+secrets.xml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
